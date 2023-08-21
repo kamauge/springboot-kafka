@@ -1,4 +1,4 @@
-package com.example.kafkaspringboot.config;
+package com.gerald.config;
 
 import org.apache.kafka.clients.admin.NewTopic;
 import org.springframework.beans.factory.annotation.Value;
@@ -11,18 +11,8 @@ public class KafkaTopicConfig {
 
     @Value("${spring.kafka.topic.name}")
     private String topicName;
-
-    @Value("${spring.kafka.topic-json.name}")
-    private String topicJsonName;
-
     @Bean
-    public NewTopic geraldTopic(){
-        return TopicBuilder.name(topicName)
-                .build();
+    public NewTopic topic(){
+        return TopicBuilder.name(topicName).build();
     }
-    @Bean
-    public NewTopic geraldJsonTopic(){
-        return TopicBuilder.name(topicJsonName)
-                .build();
-    }
-    }
+}
