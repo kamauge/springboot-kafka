@@ -1,13 +1,13 @@
-package com.example.kafkaspringboot;
+package com.gerald.springbootkafkarealworldproject;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class KafkaSpringbootApplication {
+public class SpringbootKafkaRealWorldProjectApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(KafkaSpringbootApplication.class, args);
+		SpringApplication.run(SpringbootKafkaRealWorldProjectApplication.class, args);
 	}
 
 }
